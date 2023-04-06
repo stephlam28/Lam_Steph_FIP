@@ -212,7 +212,7 @@ you work on and the intended audience */
 	height: 80px;
 }
 
-#footer-social {
+#payment-type {
 	grid-column: 11/-1;
 	/* Remove as content will dictate height */
 	height: 80px;
@@ -257,9 +257,92 @@ you work on and the intended audience */
   }
 
 .gallery-box {
-	background-color: #ddd;
+	background-color: #F5F5F5;
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
-	height: 507px;
+	height: 350px;
 	margin-bottom: 20px;
+	position: relative;
+}
+
+.gallery-last {
+	background-color: #F5F5F5;
+	grid-column: span 4 / span 4;
+	/* Remove as content will dictate height */
+	height: 350px;
+	margin-bottom: 0;
+	position: relative;
+}
+
+/* social media */
+.fa {
+	padding: 5px;
+	width: 13px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+
+  .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+
+  .fa-instagram {
+	background: #d62976;
+	color: white;
+  }
+
+  /* nav bar */
+  ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+
+  li {
+	display: inline;
+  }
+
+  a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Shop Font */
+#price {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding-right: 6px;
+}
+
+div p {
+	font-family: 'Delicious Handrawn', cursive;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.4rem;
+	padding-left: 8px;
+	padding-top: 4px;
+}
+
+/*see more */
+#gallery h3 {
+	grid-column: 1/-1;
+	text-align: right; 
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+
+.underline:hover {
+	text-decoration: underline;
 }
