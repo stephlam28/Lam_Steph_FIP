@@ -18,13 +18,6 @@ div,p,body,header,footer,section,article,nav {
 	padding: 0; 
 }	
 
-img { 
-	border: none;
-	margin: 0; 
-	padding: 0; 
-	background-image: url(https://media.glamourmagazine.co.uk/photos/61388c9f5ebdbf876576a82f/16:9/w_2580,c_limit/makeup-00b7f8a1af6759cad040fb3acf3902ca969249ecbe44d3fa12d9b41614ca1027_sf_sq.jpg);
-}
-
 /*html selectors*/
 
 body {
@@ -128,26 +121,66 @@ you work on and the intended audience */
 	grid-column: 1/5;
 	/* Remove as content will dictate height */
 	height: 507px;
-}
+	transition: box-shadow .3s;
+	width: 536px;
+	height: 400px;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	float: left;
+	margin-bottom:15px;
+  }
+
+  #product1:hover { box-shadow: 0 0 11px rgba(33,33,33,.2); }
+  #product2:hover { box-shadow: 0 0 11px rgba(33,33,33,.2); }
+  #product3:hover { box-shadow: 0 0 11px rgba(33,33,33,.2); }
+
+  #imageborder {
+	border-radius: 10px;
+  }
+
+  .imagezoom {
+  transition: transform .2s;
+  margin: 0 auto;
+  }
+
+  .imagezoom:hover {
+	transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 #product2 {
 	grid-column: 5/9;
 	/* Remove as content will dictate height */
 	height: 507px;
+	transition: box-shadow .3s;
+	width: 536px;
+	height: 400px;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	float: left;
 }
 
 #product3 {
 	grid-column: 9/-1;
 	/* Remove as content will dictate height */
 	height: 507px;
+	transition: box-shadow .3s;
+	width: 536px;
+	height: 400px;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	float: left;
 }
 
 .product-box {
 	background-color: #ddd;
+	position: relative;
 }
 
 #about-con {
-	background-color: #ddd;
+	background-color: #fbeaea;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -160,12 +193,14 @@ you work on and the intended audience */
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
 	height: 700px;
+	position: relative;
 }
 
 #about-image {
 	grid-column: 8/-1;
 	/* Remove as content will dictate height */
 	height: 700px;
+	border-radius: 20px;
 }
 
 #contact {
@@ -177,18 +212,207 @@ you work on and the intended audience */
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
 	height: 700px;
+	position: relative;
 }
 
 #contact-form {
 	grid-column: 8/-1;
 	/* Remove as content will dictate height */
-	height: 700px;
+	height: 550px;
+	position: relative;
+}
+
+#box1 {
+	width: 300px;
+	border: 5px solid #FFD0D0;
+	background-color: #FEE9E9;
+  	padding: 50px;
+  	margin: 20px;
+	position: absolute;
+	top: 15%;
+	border-radius: 35% 2%;
+}
+
+#box2 {
+	width: 300px;
+	border: 5px solid #FFD0D0;
+	background-color: #FEE9E9;
+	padding: 50px 50px 25px 50px;
+	margin: 20px;
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	border-radius: 2% 35%;
+}
+
+#box3 {
+	width: 300px;
+	border: 5px solid #FFD0D0;
+	background-color: #FEE9E9;
+	padding: 50px 50px 25px 50px;
+	margin: 20px;
+	position: absolute;
+	top: 50%;
+	border-radius: 0% 35% 2%;
+}
+
+#box4 {
+	width: 300px;
+	border: 5px solid #FFD0D0;
+	background-color: #FEE9E9;
+	padding: 50px;
+	margin: 20px;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	border-radius: 35% 0% 35% 2%;
+}
+
+#contactbutton:hover { box-shadow: 0 0 5px #f24c5c; font-weight: bold;}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+.newimprov {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.herobgcolor {
+	background: #E1E6E1;
+	width: 50vw;
+}
+
+.center {
+	text-align: center;
+}
+
+.button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	background-color: #4CAF50;
+	width: 13vw;
+	border-radius: 30px;
+	position: absolute;
+	left: 25%;
+  }
+
+  .button:hover { font-weight: bold; }
+
+#addtocart {
+	border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+	position: absolute;
+	bottom: 1%;
+	left: 1%;
+}
+
+#addtocart:hover { box-shadow: 0 0 5px rgba(242, 76, 92, 1); font-weight: bold;}
+
+#shopnow {
+	border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+	position: absolute;
+	bottom: 15%;
+	left: 25%;
+	background-color: #d4a0a0; 
+}
+
+#shopnow:hover { box-shadow: 0 0 5px #f24c5c; font-weight: bold;}
+
+.abouttext1 {
+	font-size: 1.5rem;
+	margin-top: 205px;
+}
+
+.abouttext2 {
+	font-size: 3rem;
+	margin-top: 30px;
+}
+
+.abouttext3 {
+	font-size: 2rem;
+}
+
+#getintouch {
+	font-size: 3rem;
+	margin-left: 30px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#firstname {
+	font-size: 1.5rem;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#lastname {
+	font-size: 1.5rem;
+	margin-left: 15px;
+}
+
+#email {
+	font-size: 1.5rem;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#phone {
+	font-size: 1.5rem;
+	margin-left: 15px;
+}
+
+#message {
+	font-size: 1.5rem;
+	margin-left: 30px;
+	width: 610px;
+	height: 200px;
+}
+
+#submit {
+	border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+	background-color: #d4a0a0; 
+	position: absolute;
+	bottom: 10%;
+	right: 45%;
+}
+
+#submit:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+.contactbox {
+	border:5px solid #FFD0D0;
+	background-color: #FEE9E9;
+	border-radius: 25px;
 }
 
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-color: #c0bebe;
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
@@ -198,41 +422,62 @@ you work on and the intended audience */
 }
 
 #footer-nav {
-	grid-column: 3/-1;
-	height: 80px;
-	margin-bottom: 100px;
+	grid-column: 7/-1;
+    height: 155px;
+    background: #fed8d8;
+    width: 700px;
+	border-radius: 15px;
+	padding-top: 15px;
+	padding-left: 25px;
+	margin-bottom: 15px;
 }
 
 #footer-text-large {
 	font-size:20px;
+	color: #545454;
 }
 
 #footer-text {
 	font-size: 15px;
+	color: #545454;
+}
+
+#footer-text1 {
+	font-size: 15px;
+}
+
+.footer-nav-middle {
+	position: relative;
+	left: 170px;
+	bottom: 105px;
 }
 
 .footer-nav-right {
 	position: relative;
-	left: 250px;
-	bottom: 157px;
+	left: 400px;
+	bottom: 261px;
 }
 
 #footer-newsletter1 {
-	grid-column: 1/5;
+	grid-column: 1/3;
+	width: 450px;
+	padding-bottom: 15px;
 }
 
 #footer-newsletter2 {
-	grid-column: 5/7;
-	overflow: hidden;
-	width: 500px;
+	grid-column: 1/3;
+    overflow: hidden;
+    width: 380px;
 }
 
 #payment-type {
-	grid-column: 11/-1;
-	height: 80px;
+	grid-column: 7/-1;
 }
 
-
+.shift {
+	position: relative;
+	left: 6px;
+  }
 
 /* gallery page */
 
@@ -259,11 +504,37 @@ you work on and the intended audience */
 }
 
 .dot {
-	background-color: #dddddd;
+	background-color: #d4a0a0;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 	margin: 5px;
+  }
+
+  .dotc {
+	background-color: #fcd7d7;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 5px;
+  }
+
+  .arrow {
+	border: solid black;
+	border-width: 0 5px 5px 0;
+	display: inline-block;
+	padding: 3px;
+	margin: 10px;
+  }
+
+  .right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
   }
 
 #gallery h2 {
@@ -294,6 +565,8 @@ you work on and the intended audience */
 	position: absolute;
 	bottom: 0;
 	color: black;
+	border: solid black;
+    padding: 15px;
 }
 
 /* social media */
@@ -336,6 +609,13 @@ you work on and the intended audience */
 #two {
 	position: relative;
 	left: 150px;
+	margin-right: 25px;
+	padding: 15px 15px 2px 15px;
+}
+
+#two:hover {
+	background-color: #d4a0a0;
+	text-decoration: underline;
 }
 
   a {
@@ -364,6 +644,7 @@ div p {
 	padding-top: 4px;
 }
 
+
 div h2 {
 	font-size: 2rem;
 }
@@ -379,3 +660,31 @@ div h2 {
 .underline:hover {
 	text-decoration: underline;
 }
+
+/* image zoom */
+#shadowbox {
+	transition: box-shadow .3s;
+	width: 536px;
+	height: 400px;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	float: left;
+  }
+
+  #shadowbox:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  #imageborder {
+	border-radius: 10px;
+  }
+
+  .imagezoom {
+  transition: transform .2s;
+  margin: 0 auto;
+  }
+
+  .imagezoom:hover {
+	transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
