@@ -74,7 +74,6 @@ you work on and the intended audience, we may go as low as 320px */
 
 #header-logo {
 	grid-column: 1/3;
-	width: 186px;
 	height: 80px;
 }
 
@@ -84,17 +83,20 @@ you work on and the intended audience, we may go as low as 320px */
 
 .burger {
 	height: 16px;
-	background-color:#aaa;
+	background-color:#A3A1A1;
 	display: block;
 	margin-bottom: 10px;
+	border-radius: 10px;
 }
+
 
 /* index page */
 
 #hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background: url("https://cdn.discordapp.com/attachments/388945566417027075/1094400314850934904/logo.jpg");
 	height: 458px;
+	width: auto;
 }
 
 #hero-text {
@@ -187,17 +189,21 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #footer-box {
-	margin-top: 40px;
+	margin-top: 30px;
 	/* Remove as content will dictate height */
-	height:40px;
-	grid-column: 1/3;
+	height:155px;
+	grid-column: 1/5;
+	background: #fed8d8;
+	border-radius: 15px;
 }
 
 #footer-newsletter {
-	margin-top: 100px;
-	/* Remove as content will dictate height */
-	height:100px;
-	grid-column: 1/-1;
+	height: 200px;
+    grid-column: 1/-3;
+    background-color: #ebd6d6;
+    border-radius: 15px;
+    margin-top: 8px;
+    width: 210px;
 }
 
 /* gallery page */
@@ -206,6 +212,8 @@ you work on and the intended audience, we may go as low as 320px */
 	background-color: #aaaaaa;
 	background: url("https://cdn.discordapp.com/attachments/388945566417027075/1094105835023634534/428.jpg");
 	height: 458px;
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	border-radius: 15px;
 }
 
 #hero-gallery-text {
@@ -224,12 +232,38 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 .dot {
-	background-color: #dddddd;
-	height: 30px;
-	width: 30px;
+	background-color: #d4a0a0;
+	height: 20px;
+	width: 20px;
 	border-radius: 50%;
 	margin: 5px;
   }
+
+  .dotc {
+	background-color: #fcd7d7;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin: 5px;
+  }
+
+  .arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+
+  .right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+  }
+  
 
 #gallery h2 {
 	text-align: center;
@@ -240,7 +274,7 @@ you work on and the intended audience, we may go as low as 320px */
 
 .gallery-box {
 	grid-column: 1/-1;
-	background-color: #ddd;
+	background-color: #F5F5F5;
 	/* Remove as content will dictate height */
 	height: 400px;
 	margin-bottom: 20px;
@@ -262,21 +296,25 @@ a, a:hover, a:focus, a:active {
 }
 
 #footer-newsletter2 {
-	margin-top: 20px;
-	height:40px;
-	width: 350px;
-	grid-column: 1/3;
+	margin-top: 8px;
+    height: 150px;
+    width: 170px;
+    grid-column: -1/-3;
+    background-color: #ebd6d6;
+    margin-left: 15px;
+    border-radius: 15px;
 }
 
 #trending {
 	font-size: 2.3rem;
-	color: white;
+	color: black;
 	text-align: center;
+	border: solid black;
+    padding: 15px;
 }
 
 #footer-text {
-	font-size: 15px;
-	border:#fff;
+	font-size: 14.5px;
 }
 
 .footer-nav-right {
@@ -309,9 +347,44 @@ div h2 {
 }
 
 #payment-type {
-	grid-column: 10/-1;
-	height: 80px;
+	grid-column: 10/3;
+    position: relative;
+    left: 25px;
+    bottom: 43px;
+}
+
+#shadowbox {
+	transition: box-shadow .3s;
+	width: 387px;
+	height: 400px;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	float: left;
+  }
+
+  #shadowbox:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  }
+
+  #imageborder {
+	border-radius: 10px;
+  }
+
+  .imagezoom {
+  transition: transform .2s;
+  margin: 0 auto;
+  }
+
+  .imagezoom:hover {
+	transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .shift {
 	position: relative;
-	right: 45px;
-	bottom: 80px;
+	left: 15px;
+  }
+
+  #footer-text-large {
+	font-size:18px;
 }
